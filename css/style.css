@@ -1,0 +1,738 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+    transition-delay: 0.01s;
+}
+
+
+header{
+    width: 100%;
+    height: 70px;
+    display: block;
+    background-color: #fff;
+    border-bottom: red solid 1px;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .logo-img{
+    height: 60px;
+    width: 60px;
+}
+
+header nav .logo-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav ul {
+    padding: 16px 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: black;
+    padding: 5px 0;
+    font-size: 1.6em;
+    text-decoration: none;
+}
+
+header nav .logo-img{
+    width: 60px;
+    height: 60px;
+    margin: 0 25px;
+}
+
+.home-content{
+    width: 100%;
+    height: calc(100vh - 70px);
+}
+
+.vertical-red-line{
+    width: 25px;
+    height: 80vh;
+    margin: 0 20px;
+    background-color: red;
+}
+
+.red-box{
+    width: 120px;
+    height: 75px;
+    margin: 0 20px;
+    padding: 20px 0;
+    background-color: red;
+    border-bottom-left-radius: 50px;
+}
+
+.pos-div{
+    position: absolute;
+    top: 80px;
+    left: 0;
+    margin: 50px 100px;
+    width: 100%;
+    height: 470px;
+    display: flex;
+}
+
+.car-img{
+    flex: 0.7;
+    margin: 0 15px;
+    background-color: transparent;
+}
+
+.car-img-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 68.6%;
+    height: 100%;
+    margin: 0 15px;
+    background-color: #000;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    opacity: 0.5;
+}
+.car-img img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    object-fit: cover;
+}
+
+.tshirt-img{
+    flex: 0.3;
+    width: 180px;
+    overflow: hidden;
+
+}
+
+.tshirt-img img{
+    height: 100%;
+}
+
+.f1-team{
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    margin: 0 150px;
+    width: 80%;
+    height: 140px;
+    background-color: transparent;
+    display: flex;
+    z-index: 1;
+}
+
+.f1-team .f1-team-name{
+    width: 100%;
+}
+
+.f1-down-btn{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: gray;
+    width: 80px;
+    height: 150px;
+}
+
+.f1-down-btn button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+.f1-down-btn button:focus{
+    outline: none;
+}
+
+.f1-down-btn button img{
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+    object-fit: cover;
+}
+
+/*================================== Sect-one ==================================*/
+.bt-div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.vertical-red-line-cntnt {
+    height: 100vh;
+    width: 23px;
+    margin: 0 20px;
+    background-color: red;
+    z-index: 99;
+}
+
+.pos-img-grid-div {
+    position: absolute;
+    top: 0;
+    left: 40px;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    z-index: 1;
+}
+
+.img-row-1,
+.img-row-2 {
+    width: 92%;
+    height: 440px;
+    background-color: #fff;
+    display: flex;
+}
+
+.row-1-img1,
+.row-2-img2 {
+    flex: 1;
+    background-color: pink;
+    cursor: pointer;
+}
+
+.row-1-img2 {
+    flex: 1;
+}
+
+.row-1-text h1 {
+    color: #fff;
+    margin: 50px 0;
+    font-weight: 100;
+    text-align: center;
+}
+
+.row-1-img2.color-div {
+    background-color: red;
+}
+
+.row-2-img3 {
+    margin-left: -90px;
+    width: 90px;
+    height: 440px;
+}
+
+.row-2-img3-overlay {
+    position: absolute;
+    width: 90px;
+    height: 440px;
+    background-color: #000;
+    opacity: 0.6;
+}
+
+.row-1-img1 img,
+.row-2-img2 img,
+.row-2-img3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.row-2-img1 {
+    flex: 1;
+    background-color: red;
+}
+
+.row-2-text h1 {
+    color: red;
+    margin: 50px 0;
+    font-weight: 100;
+    text-align: center;
+}
+
+.row-2-img1.color-div {
+    background-color: #000;
+    opacity: 0.8;
+}
+
+
+.descrpt-img1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 154px;
+    height: 111.5vh;
+    background-color: pink;
+}
+
+.descrpt-img1-overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.6;
+}
+
+.descrpt-img1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.arrow-dwn{
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    width: 80px;
+    height: 80px;
+    border: 1px solid red;
+    background: gray;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    opacity: 0.3;
+    animation: flick 0.5s infinite;
+}
+
+.arrow-dwn button{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.arrow-dwn button img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@keyframes flick{
+    0%{
+        opacity: 0.3;
+    }
+
+    50%{
+        opacity: 0.6;
+    }
+
+    100%{
+        opacity: 0.3;
+    }
+}
+
+/*================================================== Sect-two ==========================================================*/
+.bt-div-2 {
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.v-line {
+    position: relative;
+    top: 100vh;
+    width: 23px;
+    height: 90%;
+    background-color: red;
+    margin: 0 20px;
+}
+
+.red-box-cntnt {
+    position: relative;
+    top: 100vh;
+    width: 150px;
+    height: 80px;
+    margin: 0 20px;
+    background-color: red;
+    border-bottom-left-radius: 30px;
+    z-index: 99;
+}
+
+
+.red-box-cntnt a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.red-box-cntnt a h1 {
+    text-align: center;
+}
+
+.horizontal-red-line {
+    position: relative;
+    top: 97.2vh;
+    width: 100%;
+    height: 23px;
+    margin-left: 125px;
+    bottom: 23px;
+    background-color: red;
+    z-index: 1;
+}
+
+.pos-img-grid {
+    position: absolute;
+    top: 100vh;
+    left: 40px;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: -1;
+}
+
+.uni-row {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 460px;
+    background-color: transparent;
+}
+
+.uni-row img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.uni-row-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.4;
+}
+
+.uni-row-box {
+    position: absolute;
+    top: 0;
+    left: 638px;
+    width: 200px;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0.3;
+}
+
+.last-row-img {
+    position: absolute;
+    top: 58%;
+    height: 330px;
+    width: 100%;
+    display: flex;
+}
+
+.lst-row-img1 {
+    flex: 1;
+    background-color: transparent;
+}
+
+.lst-row-img1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.lst-row-img1-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.4;
+}
+
+
+.lst-row-img2 {
+    flex: 1;
+    background-color: #fff;
+}
+
+.lst-row-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 350px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.lst-row-text h1 {
+    color: #000;
+    margin: 45px 0;
+    font-weight: 500;
+    text-align: center;
+    z-index: 999;
+}
+
+.lst-row-img2.color-div {
+    background-color: #000;
+    opacity: 0.8;
+}
+
+.lst.row-img2.clr-dv {
+    background-color: #fff;
+}
+
+/*============= WEBSITE RESPONSIVENESS =============*/
+@media (max-width: 768px){
+    header{
+        width: 100%;
+    }
+
+    header nav ul li a{
+        font-size: 1.4rem;
+    }
+
+    .home-content{
+        width: 100%;
+        height: 100%;
+    }
+
+    .pos-div{
+        width: 100%;
+    }
+
+    .car-img{
+        height: 390px;
+    }
+    .car-img-overlay{
+       display: none;
+    }
+
+    .tshirt-img{
+        height: 390px;
+        width: 190px;
+    }
+
+    .f1-team{
+        position: relative;
+        bottom: 90px;
+    }
+    .f1-team img{
+        width: 110px;
+        height: 71px;
+    }
+
+    .f1-down-btn{
+        position: absolute;
+        right: 0;
+        bottom: 110px;
+        width: 40px;
+        height: 90px;
+    }
+
+    .bt-div{
+        width: 100%;
+        height: 100%;
+    }
+
+    .pos-img-grid-div{
+        height: 100%;
+        width: 100%;
+    }
+
+    .img-row-1{
+        width: 100%;
+    }
+
+    .row-1-img2 h1,
+    .row-2-img1 h1{
+        margin: 40px 5px;
+        font-size: 1.1rem;
+    }
+
+    .descrpt-img1{
+        width: 120px;
+    }
+
+    .arrow-dwn{
+        width: 70px;
+    }
+
+
+/*========= Sect-two ==========*/
+    .bt-div-2{
+        width: 100%;
+        height: 100%;
+    }
+
+    .pos-img-grid{
+        width: 100%;
+        height: 100%;
+    }
+
+    .uni-row{
+        width: 100%;
+    }
+
+    .uni-row-box{
+        width: 80px;
+        left: 260px;
+    }
+
+    .last-row-img{
+        height: 290px;
+    }
+
+    .lst-row-text{
+        position: absolute;
+        top: 0;
+        left: -150px;
+        width: 100%;
+        height: 100%;
+
+    }
+    .lst-row-text h1{
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 425px) {
+    header {
+        width: 100%;
+    }
+
+    header nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    .home-content {
+        width: 100%;
+        height: 100%;
+    }
+
+    .pos-div {
+        width: 100%;
+    }
+
+    .car-img {
+        height: 390px;
+    }
+
+    .tshirt-img {
+        display: none;
+    }
+
+    .f1-team {
+        position: relative;
+        bottom: 90px;
+    }
+
+    .f1-team img {
+        margin: 20px 0;
+        width: 20px;
+        height: 20px;
+    }
+
+    .f1-down-btn {
+        position: absolute;
+        right: 0;
+        bottom: 90px;
+        width: 40px;
+        height: 90px;
+    }
+
+    .bt-div {
+        width: 100%;
+        height: 100%;
+    }
+
+    .pos-img-grid-div {
+        height: 100%;
+        width: 100%;
+    }
+
+    .img-row-1 {
+        width: 100%;
+    }
+
+    .row-1-img2{
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.7;
+    }
+    .row-1-img2 h1{
+        margin: 40px 5px;
+        font-size: 0.7rem;
+    }
+
+    .row-2-img1 h1 {
+        margin: 40px 5px;
+        font-size: 0.7rem;
+    }
+
+    .descrpt-img1 {
+        width: 80px;
+    }
+
+    .arrow-dwn {
+        width: 70px;
+    }
+
+
+    /*========= Sect-two ==========*/
+    .bt-div-2 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .pos-img-grid {
+        width: 100%;
+        height: 100%;
+    }
+
+    .uni-row {
+        width: 100%;
+    }
+    
+    .uni-row img{
+        width: 100%;
+    }
+
+    .uni-row-box {
+        width: 80px;
+        left: 260px;
+    }
+
+    .last-row-img {
+        height: 290px;
+    }
+
+    .lst-row-text {
+        position: absolute;
+        top: 0;
+        left: -250px;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .lst-row-text h1 {
+        font-size: 0.7rem;
+    }
+}
